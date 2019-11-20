@@ -14,6 +14,7 @@ import cv2
 
 # load the image
 image = cv2.imread("images/beach.png")
+# image = cv2.imread("images/horseshoe_bend.png")
 
 # grab the image channels
 chans = cv2.split(image)

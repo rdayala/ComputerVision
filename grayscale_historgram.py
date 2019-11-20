@@ -14,6 +14,7 @@ import cv2
 
 # load the image, convert it to grayscale
 image = cv2.imread("images/beach.png")
+# image = cv2.imread("images/horseshoe_bend.png")
 image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
  
 # construct a grayscale histogram
