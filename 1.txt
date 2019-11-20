@@ -1,0 +1,6 @@
+Directory : D:\ComputerVision\PythonCodeSnippets
+
+Keep all the pictures inside images/ folder
+
+Use Spyder IDE for coding
+
