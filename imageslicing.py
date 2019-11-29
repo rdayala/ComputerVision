@@ -7,7 +7,7 @@ Created on Fri Nov 29 18:33:40 2019
 
 # this program, we try to display different parts of an image
 # Using NumPy array slicing to break down the image into different parts
-
+import numpy as np
 import cv2
 
 image = cv2.imread("images/messi.png");
@@ -57,6 +57,16 @@ right = image[:, cX:w]
 
 cv2.imshow("Left", left)
 cv2.imshow("Right", right)
+cv2.waitKey(0)
+
+# copy an image using numpy
+copy_image = np.copy(image)
+cv2.imshow("Copy image", copy_image)
+cv2.waitKey(0)
+
+# change color of the top left of the image
+copy_image[0:cY, 0:cX] = (0, 255, 0)
+cv2.imshow("Updated image", copy_image)
 cv2.waitKey(0)
 
 cv2.destroyAllWindows()
