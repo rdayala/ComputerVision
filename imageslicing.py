@@ -15,6 +15,10 @@ image = cv2.imread("images/messi.png");
 cv2.imshow("Original", image)
 cv2.waitKey(0)
 
+# images are just NumPy arrays. The top-left pixel can be found at (0, 0)
+(b, g, r) = image[0, 0]
+print("Pixel at (0, 0) - Red: {r}, Green: {g}, Blue: {b}".format(r=r, g=g, b=b))
+
 (h, w) = image.shape[:2]
 
 # compute center of the image
